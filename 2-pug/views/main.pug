@@ -1,0 +1,25 @@
+extends index
+
+block content
+	h2(class="text-center mb-4") Lista de productos (PUG)
+	br
+
+	if productos.length
+		div(class="table-responsive")
+			table(class="table table-striped table-bordered table-hover")
+				thead
+					tr
+						th Nombre
+						th Precio
+						th Imagen
+				tbody
+					each producto in productos
+						tr
+							td= producto.title
+							td(style="text-align: right")= "$"+producto.price
+							td 
+								img(width="50" src=producto.thumbnail alt="Imagen no encontrada")
+	else
+		h3(class="alert alert-warning") No hay productos
+	br
+	a(href="/" type="button" class="btn btn-primary btn-lg") Volver al formulario de carga
