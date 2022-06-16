@@ -13,13 +13,16 @@
 
  4. Por escrito, indicar cuál de los tres motores de plantillas prefieres para tu proyecto y por qué.
 
-**Notas:**
+*Notas:*
 Cada versión de plantillas tiene su carpeta dedicada:
+
 Handlebars: *1-hbs*
+
 PUG: *2-pug*
+
 EJS: *3-ejs*
 
-En la carpeta *common* están los archivos comunes a todos las versiones.
+En la carpeta *"common"* están los archivos comunes a todos las versiones.
 
 Utilizar npm install en cada versión de plantillas para descargar las dependencias.
 
